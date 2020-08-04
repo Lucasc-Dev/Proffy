@@ -10,7 +10,7 @@ function Routes() {
         <BrowserRouter>
             <Route path="/" component={Landing} exact />
             <Route path="/study" component={TeacherList} />
-            <Route path="/study" component={TeacherForm} />
+            <Route path="/give-classes" component={TeacherForm} />
         </BrowserRouter>
     )
 }
