@@ -10,12 +10,13 @@
     background: var(--color-primary);
 }
 
-.logo-container {
-    height: 10rem;
+.logo-container img {
+    width: 43.4rem;
+    height: 12.7rem;
 }
 
 .hero-image { 
-    width: 100%;
+    width: 60rem;
 }
 
 .logo-container { 
@@ -40,6 +41,7 @@
     width: 30rem;
     height: 10.4rem;
     border-radius: 0.8rem;
+    margin-right: 1.6rem;
     font: 700 2.0rem Archivo;
 
     display: flex;
@@ -95,18 +97,17 @@
 @media (min-width: 1100px) {
     #page-landing-content {
         max-width: 1100px;
-
+ 
         display: grid;
-        grid-template-rows: 350px 1fr;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-areas: "logo hero hero" "buttons buttons total";
+        grid-template-rows: 400px 1fr;
+        grid-template-columns: 1.7fr 1fr 1.1fr;
+        grid-template-areas: "logo hero hero" "buttons buttons total"; 
     }
 
     .logo-container {
         grid-area: logo;
-        align-self: center;
         text-align: left;
-        margin: 0;
+        margin: 8rem 0 0 0;
     }
 
     .logo-container h2 {
@@ -114,16 +115,13 @@
         font-size: 3.6rem;
     }
 
-    .logo-container img {
-        height: 100%;
-    }
-
     .hero-image {
         grid-area: hero;
-        justify-self: end;
+        justify-self: start;
     }
 
     .buttons-container {
+        width: 80%;
         grid-area: buttons;
         justify-content: flex-start;
     }
@@ -135,5 +133,6 @@
     .total-connections {
         grid-area: total;
         justify-self: end;
+        font-size: 1.5rem;
     }
 }
