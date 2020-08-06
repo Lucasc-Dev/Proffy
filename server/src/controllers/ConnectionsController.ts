@@ -7,7 +7,7 @@ export default class ConnectionsContrller {
 
         const { total } = totalConnections[0];
 
-        return res.json(total);
+        return res.json({ total });
     }
     async create(req: Request, res: Response) {
         const { user_id } = req.body;
